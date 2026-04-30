@@ -1,5 +1,3 @@
-
-```bash
 #!/bin/bash
 
 echo "[*] The Downloader Installer v62"
@@ -29,7 +27,7 @@ case $PLATFORM in
         sudo apt install -y ffmpeg wget python3 python3-pip git nodejs
         ;;
     macos)
-        if ! command -v brew &>/dev/null; then
+        if ! command -v brew >/dev/null 2>&1; then
             echo "[!] Install Homebrew first: https://brew.sh"
             exit 1
         fi
@@ -37,7 +35,8 @@ case $PLATFORM in
         brew install ffmpeg wget python3 git node
         ;;
     *)
-        echo "[!] Install manually: ffmpeg, wget, python3, git"
+        echo "[!] Platform not recognized. Install manually:"
+        echo "    ffmpeg, wget, python3, git"
         ;;
 esac
 
@@ -45,8 +44,12 @@ esac
 pip3 install -U yt-dlp spotdl gallery-dl TeraboxDL
 
 # Create directories
-mkdir -p ~/Downloads/Hasil-{Video,Musik,Gallery,Terabox,Batch}
+mkdir -p ~/Downloads/Hasil-Video
+mkdir -p ~/Downloads/Hasil-Musik
+mkdir -p ~/Downloads/Hasil-Gallery
+mkdir -p ~/Downloads/Hasil-Terabox
+mkdir -p ~/Downloads/Hasil-Batch
 
 chmod +x downloader.sh
 
-echo "[✓] Done! Run: bash downloader.sh"
+echo "[OK] Done! Run: bash downloader.sh"
