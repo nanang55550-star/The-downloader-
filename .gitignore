@@ -10,7 +10,10 @@
 
 # Downloaded files
 Hasil-*/
-/sdcard/Download/Hasil-*/
 
-# Termux
-.termux/
+# Python
+__pycache__/
+*.pyc
+
+# Temporary
+*.tmp
