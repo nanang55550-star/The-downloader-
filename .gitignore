@@ -1,0 +1,42 @@
+# ============================================================
+# .GITIGNORE - FILE YANG DIABAISKAN GIT
+# ============================================================
+
+# Cookie & Credentials (PENTING!)
+*.cookie
+*.cookies.txt
+.youtube_cookies.txt
+.terabox_cookie
+
+# Log Files
+*.log
+.downloader.log
+
+# Downloaded Content
+Hasil-*/
+/sdcard/Download/Hasil-*/
+~/Downloads/Hasil-*/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Temporary
+*.tmp
+*.temp
+/tmp/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup
+*.backup
+*.backup.*
