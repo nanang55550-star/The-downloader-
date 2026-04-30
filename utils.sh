@@ -86,9 +86,9 @@ header() {
     clear
     echo -e "\033[1;32m╔══════════════════════════════════════╗\033[0m"
     echo -e "\033[1;33m║   THE DOWNLOADER v62 - UNIVERSAL     ║\033[0m"
-    echo -e "\033[1;36m║   Platform: $(echo $PLATFORM | tr '[:lower:]' '[:upper:]')                    ║\033[0m"
+    echo -e "\033[1;36m║   Platform: $(echo $PLATFORM | tr '[:lower:]' '[:upper:]')                   ║\033[0m"
     echo -e "\033[1;32m╚══════════════════════════════════════╝\033[0m"
-    echo -e "                                  BY: NZR"
+    echo -e "                                BY: NZR"
     
     if [ "$PLATFORM" == "termux" ]; then
         AVAIL_MB=$(df /sdcard | awk 'NR==2 {printf "%.0f", $4/1024}')
