@@ -1,0 +1,16 @@
+# Cookie & Credentials
+*.cookie
+*.cookies.txt
+.youtube_cookies.txt
+.terabox_cookie
+
+# Log
+*.log
+.downloader.log
+
+# Downloaded files
+Hasil-*/
+/sdcard/Download/Hasil-*/
+
+# Termux
+.termux/
